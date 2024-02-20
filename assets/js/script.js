@@ -6,26 +6,23 @@ document.addEventListener('DOMContentLoaded', function() {
   const totalItems = items.length;
   const step = 1; 
   const visibleItems = 3;
-  // Calculate the limit for scrolling before reset
   const scrollLimit = totalItems - visibleItems;
 
   function updateCarousel() {
-    // Calculate offset based on current index
-    const offset = -(currentIndex * (100 / visibleItems)); // Adjust for correct percentage based on visible items
+    const offset = -(currentIndex * (100 / visibleItems)); 
     document.querySelector('.poster-carousel').style.transform = `translateX(${offset}%)`;
   }
 
   function autoScroll() {
-    // Increment index or reset if at limit
     if (currentIndex < scrollLimit) {
       currentIndex += step;
     } else {
-      currentIndex = 0; // Reset index to start for infinite loop
+      currentIndex = 0; 
     }
     updateCarousel();
   }
 
-  setInterval(autoScroll, 5000); // Scroll every 5 seconds
+  setInterval(autoScroll, 1500); 
 });
 
 
