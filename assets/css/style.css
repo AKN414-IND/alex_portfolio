@@ -623,7 +623,9 @@ textarea.input-field {
   padding: 8px 20px;
   transition: var(--transition);
 }
-
+.contact-info{
+  padding-top: 20px;
+}
 .submit-btn:is(:hover, :focus) { background-color: var(--black); }
 
 .submit-btn ion-icon { transition: var(--transition); }
@@ -919,7 +921,7 @@ textarea.input-field {
     border-radius: var(--radius-10);
   }
 
-  .exp-list .span { --fs-13: 1.4rem; }
+  .exp-list .span { --fs-13: 1.5rem; }
 
   .slide-down-btn {
     display: block;
@@ -956,14 +958,20 @@ textarea.input-field {
     position: absolute;
     top: 0;
     right: 50px;
-    width: 410px;
-    height: 620px;
-    background-image: url('../images/odyssey\'stravel.png');
+    width: 500px;
+    height: 500px;
+    background-image: url('../images/posters/w5.jpeg');
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: 105%;
-    background-attachment: fixed;
+    border: #a183e7 1px solid;
+    border-radius: var(--radius-10);
     overflow: hidden;
+  }
+  .contact h2{
+    color: var(--theme-color-bar);
+    font-size: 35px;
+    font-weight: 1000;
+    
   }
 
 
